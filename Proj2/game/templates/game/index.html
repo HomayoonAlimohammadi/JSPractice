@@ -7,10 +7,17 @@
             Reactive Game!
         </title>
 
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
         <link rel="stylesheet" href="{% static 'game/styles.css' %}">
-        <script src="{% static 'game/index.js' %}"></script>
+        <script src="{% static 'game/react.js' %}" type="text/babel"></script>
     </head>
     <body>
-        This is my game
+        <div class="container">
+
+        </div>
     </body>
 </html>
