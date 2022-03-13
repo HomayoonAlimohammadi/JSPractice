@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Post Loader
+        </title>
+
+        <script>
+            function load() {
+                fetch('load/')
+                .then(response => {
+                    console.log('response: ',response)
+                    return response.json()
+                })
+                .then(data => {
+                    console.log('data: ',data)
+                })
+            }
+            document.addEventListener('DOMContentLoader', () => {
+                document.querySelector('#load').onclick = load;
+            })
+        </script>
+
+        <style>
+            div {
+                margin: 10px;
+                padding: 10px;
+                background: green;
+            }
+        </style>
+
+    </head>
+    <body>
+        <button id="load">Load</button>
+    </body>
+</html>
